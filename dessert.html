@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dessert</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <script src=""></script>
+<link rel="stylesheet" href="pizza2.css">
+    
+</head>
+<body class="bg-black">
+    <div style="color: rgb(5, 207, 5); font-family: Verdana, Geneva, Tahoma, sans-serif;"  class="display-1  ">DESSERT VARIETIES</div>
+      <img src="https://images3.alphacoders.com/133/1331771.png" class="img-fluid w-100 " alt="..."> 
+
+     
+
+
+    </div>
+    
+    <div class="container " id="container">
+
+<div class="row" id="row">
+    
+</div>
+         
+    </div>
+
+
+    <script scr="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" ></script>
+
+<script>
+
+
+let key = '6109066d052747b9bfad64b1b6dfaf89'
+
+async function pizza(){
+    let displayFood= await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${key}&query=icecream&number=20`, {
+        method: 'GET',
+        headers:{
+            'Content-Type': 'application/json',
+        },
+    })
+
+    let finalFood = await displayFood.json();
+    console.log(finalFood);
+    let a=[];
+    let b=[];
+    for(let i=0; i<finalFood.results.length;i++){
+        
+        
+        a.push(finalFood.results[i].image)
+    b.push(finalFood.results[i].title)}
+        console.log(a);
+        console.log(b)
+        
+        const row1 = document.getElementById("row");
+
+        const foodImage = a.map((element,i) =>{
+   
+          return `<div class = "col-3 p-5">
+                     <div class="card">
+                       <img src =${element} class = "rounded-5 ">
+                          <div class="card-body">
+                          <h5 class="card-title">${b[i]}</h5>
+                  </div>
+             </div>             
+          </div>`
+
+        })
+
+        let s= foodImage.join("");
+        row1.innerHTML = s;
+
+}
+
+pizza();
+    
+</script>
+</body>
+</html>

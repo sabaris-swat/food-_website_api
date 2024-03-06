@@ -1,0 +1,303 @@
+.image{
+    background-image: url(background.jpg);
+    
+}
+.text{
+    color: aliceblue;
+    padding: 100px;
+}
+.green-0{
+    color: rgb(12, 242, 12);
+    
+}
+.hi{
+    background-color: rgb(34, 250, 34);
+}
+.second{
+    width: 100%;
+    height: auto;
+    background: black;
+    padding: 50px 0;
+}
+
+.second .img_box{
+    width: 100%;
+    height: 450px;
+    padding: 0 2%;
+    display: flex;
+}
+
+.second .img_box .img_card{
+    width: 450px;
+    height: 450px;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 35px;
+    overflow: hidden;
+}
+
+.second .img_box .img_card .display_text{
+    width: 450px;
+    height: 450px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 35px;
+    position: absolute;
+}
+
+.second .img_box .img_card .display_text p{
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.second .img_box .img_card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 35px;
+}
+
+
+
+.menu{
+    width: 100%;
+    height: auto;
+    background: #000;
+}
+
+.menu h1{
+    color: aliceblue;
+    font-family: "Euphemia";
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.menu .m_box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.menu .m_box .m_cards{
+    width: 620px;
+    height: 690px;
+}
+
+.menu .m_box .m_cards .m_img{
+    width: 620px;
+    height: 620px;
+    border-radius: 35px;
+    overflow: hidden;
+}
+
+.menu .m_box .m_cards .m_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.menu .m_box .m_cards h6{
+    color: aliceblue;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.menu .m_box .m_cards .m_btn{
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-decoration: none;
+    color: black;
+    background: rgb(13, 231, 13);
+    padding: 8px 0;
+    font-size: 15px;
+    border-radius: 15px;
+    font-family: "Franklin Gothic Book";
+}
+
+.banner{
+    width: 100%;
+    height: 90vh;
+    background: #000;
+}
+
+.banner .b_text{
+    position: absolute;
+}
+
+.banner .b_text h6{
+    color: #fff;
+    letter-spacing: 1px;
+    position: relative;
+    top: 340px;
+    left: 14%;
+    font-size: 13px;
+}
+
+.banner .b_text h1{
+    color: #fff;
+    position: relative;
+    top: 345px;
+    left: 14%;
+    font-size: 40px;
+}
+
+.banner .b_text p{
+    width: 550px;
+    color: #cfcfcf;
+    position: relative;
+    top: 360px;
+    left: 14%;
+    text-align: justify;
+    line-height: 23px;
+}
+
+.banner .b_text .b_btn{
+    width: 130px;
+    position: relative;
+    top: 390px;
+    left: 14%;
+    text-decoration: none;
+    color: #000;
+    background: #86f716;
+    padding: 8px 0;
+    font-size: 15px;
+    border-radius: 15px;
+    padding: 8px 13px;
+    font-family: "Franklin Gothic Book";
+}
+
+.banner img{
+    width: 95%;
+    height: 630px;
+    display: flex;
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 35px;
+}
+
+
+
+.contact{
+    width: 100%;
+    height: 345px;
+    padding: 20px 0;
+    background: #000;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact .c_image img{
+    width: 800px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 35px;
+}
+
+.contact .subscribe h1{
+    color: #fff;
+    font-family: "Euphemia";
+    text-align: center;
+}
+
+.contact .subscribe .title{
+    color: #cfcfcf;
+    text-align: center;
+}
+
+.contact .subscribe .c_search{
+    margin: 40px 0;
+}
+
+.contact .subscribe .c_search input{
+    width: 250px;
+    padding: 8px 5px;
+    background: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    outline: none;
+    color: #cfcfcf;
+    border-color: #84f513;
+}
+
+.contact .subscribe .c_search button{
+    text-decoration: none;
+    color: #000;
+    background: #82f60f;
+    padding: 8px 12px;
+    font-size: 15px;
+    border-radius: 15px;
+    font-family: "Franklin Gothic Book";
+}
+
+.contact .subscribe .address{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .subscribe .address .place h3{
+    font-family: "Euphemia";
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.contact .subscribe .address .place p{
+    color: #cfcfcf;
+    font-family: "Franklin Gothic Book";
+    text-align: right;
+    line-height: 23px;
+}
+
+.contact .subscribe .address .follow{
+    font-family: "Euphemia";
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.contact .subscribe .address .follow .icon{
+    letter-spacing: 5px;
+    margin: 20px 0 10px 0;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.contact .subscribe .address .follow .icon i:hover{
+    color: #85ef1c;
+}
+
+p.end{
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    background: #000;
+    color: #fff;
+}
+
+p.end span{
+    color: #86f518;
+}
+
+p.end span i{
+    margin: 0 8px;
+}
+
+
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+
